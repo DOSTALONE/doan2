@@ -1,0 +1,102 @@
+﻿@page
+@model b3.Pages.xacnhandanhtinhModel
+@{
+}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    <center>
+    <div class="alert alert-danger" role="alert">
+        <h1>Chúng Tôi Sẽ Ghi Nhận Thông Tin Của Bạn!!</h1>
+    </div>
+    </center>
+    
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Họ</font></font></label>
+        <input type="text" class="form-control" id="validationDefault01"  required="">
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tên</font></font></label>
+        <input type="text" class="form-control" id="validationDefault02"  required="">
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mã Số Sinh Viên</font></font></label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span>
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quê Quán</font></font></label>
+        <input type="text" class="form-control" id="validationDefault03" required="">
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Năm Sinh</font></font></label>
+        <select class="form-select" id="validationDefault04" required="">
+          <option selected="" disabled="" value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chọn...</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1997</font></font></option>
+          <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1998</font></font></option>
+          <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1999</font></font></option>
+          <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2000</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2001</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2002</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2003</font></font></option>
+                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2004</font></font></option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lớp</font></font></label>
+        <input type="text" class="form-control" id="validationDefault05" required="">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required="">
+          <label class="form-check-label" for="invalidCheck2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Đồng ý với các điều khoản và điều kiện
+          </font></font></label>
+        </div>
+      </div>
+        <center>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Gửi Biểu Mẫu
+            </button>
+        </center>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Phần Bình Luận Của Bạn Sẽ Được Chia Sẻ Công Khai</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        Chúng Tôi Đang Xem Xét Bình Luận Của Bạn, Nó Sẻ Được Xuất Hiện Sớm!!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy Bỏ</button>
+                        <button type="button" class="btn btn-primary"><a href="https://localhost:5001/home" class="link-dark">ChấP Nhận</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <!-- End Example Code -->
+  </body>
+</html>
