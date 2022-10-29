@@ -1,0 +1,95 @@
+﻿@page
+@model b3.Pages.gopykienModel
+@{
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example">
+
+<form class="was-validated">
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label"><h1>Đóng Góp Ý Kiến</h1></label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Bạn Đang Nghĩ Gì ?" required></textarea>
+            <div class="alert alert-danger" role="alert">
+                Chúng Tôi Sẽ Ghi Nhận Thông Tin Của Bạn!!
+            </div>
+        <div class="invalid-feedback">
+            Vui Lòng Điền Thông Tin Vào Phần Bình Luận!!
+        </div>
+    </div>
+
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+        <label class="form-check-label" for="validationFormCheck1">Đồng Ý Với Quy Định Của Chúng Tôi</label>
+        <div class="invalid-feedback">Vui lòng đánh dấu chấp nhận</div>
+    </div>
+
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+        <label class="form-check-label" for="validationFormCheck2">Đánh Giá Tốt</label>
+    </div>
+    <div class="form-check mb-3">
+        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+        <label class="form-check-label" for="validationFormCheck3">Đánh Giá Không Tốt</label>
+        <div class="invalid-feedback">More example invalid feedback text</div>
+    </div>
+
+    <div class="mb-3">
+        <select class="form-select" required aria-label="select example">
+            <option value="">Bạn Học Ngành Gì?</option>
+            <option value="1">Công Nghệ Thông Tin</option>
+            <option value="2">Việt Nam Học</option>
+            <option value="3">Tài Chính Ngân Hàng</option>
+            <option value="3">Sư Phạm Tiếng Anh</option>
+            <option value="3">Luật</option>
+            <option value="3">Thợ Xây</option>
+        </select>
+        <div class="invalid-feedback">Vui lòng chọn một đáp án!! </div>
+    </div>
+
+    <div class="mb-3">
+        <input type="file" class="form-control" aria-label="file example" required>
+        <div class="invalid-feedback">Gửi biểu mẫu cho chúng tôi </div>
+    </div>
+    <center>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Gửi Biểu Mẫu
+        </button>
+    </center>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Phần Bình Luận Của Bạn Sẽ Được Chia Sẻ Công Khai</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    Chúng Tôi Đang Xem Xét Bình Luận Của Bạn, Nó Sẻ Được Xuất Hiện Sớm!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy Bỏ</button>
+                    <button type="button" class="btn btn-primary"><a href="https://localhost:5001/home" class="link-dark">ChấP Nhận</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- End Example Code -->
+  </body>
+</html>
