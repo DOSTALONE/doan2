@@ -1,0 +1,48 @@
+﻿@page
+@model b3.Pages.bantinthemModel
+@{
+}
+
+
+<div class="card">
+    <img src="https://enews.agu.edu.vn/images/assets/2022/07/PSA/1.jpg" width="200px" class="card-img-top" alt="...">
+
+    <div class="card-body">
+        <h5 class="card-title">Những khoảnh khắc vui tươi tại chương trình “American Culture Day”</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+<div class="card" aria-hidden="true">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+        </h5>
+        <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+        </p>
+        <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="https://enews.agu.edu.vn/images/assets/2022/07/PSA/1.jpg" class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+</div>
